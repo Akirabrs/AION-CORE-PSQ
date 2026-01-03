@@ -1,10 +1,10 @@
 # AION-CORE: Physics-Aware Adaptive Control Kernel
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-TRL%204%20(Lab%20Validated)-success?style=for-the-badge&logo=github" alt="Status TRL 4">
-  <img src="https://img.shields.io/badge/Platform-FPGA%20%2F%20Real--Time-red?style=for-the-badge&logo=xilinx" alt="Platform FPGA">
-  <img src="https://img.shields.io/badge/Latency-%3C%201%C2%B5s%20(Target)-blue?style=for-the-badge&logo=speedtest" alt="Latency Sub-microsecond">
-  <img src="https://img.shields.io/badge/License-Apache%202.0-lightgrey?style=for-the-badge" alt="License Apache 2.0">
+  <img src="https://img.shields.io/badge/Status-TRL%204%20(Lab%20Validated)-success?style=for-the-badge&logo=github" alt="Status">
+  <img src="https://img.shields.io/badge/Platform-FPGA%20%2F%20Real--Time-red?style=for-the-badge&logo=xilinx" alt="Platform">
+  <img src="https://img.shields.io/badge/Latency-%3C%201%C2%B5s%20(Target)-blue?style=for-the-badge&logo=speedtest" alt="Latency">
+  <img src="https://img.shields.io/badge/License-Apache%202.0-lightgrey?style=for-the-badge" alt="License">
 </p>
 
 ---
@@ -37,22 +37,22 @@ AION-CORE executes within the **Control-Oriented Operating Kernel (COOK)**, a du
 
 ```mermaid
 graph TD
-    subgraph "Physical Plant (Tokamak/PEC)"
-        S[⚡ Fast Sensors (dB/dt, Ip)]
-        A[🔌 Actuators (Coils/Pulses)]
+    subgraph Plant ["Physical Plant (Tokamak/PEC)"]
+        S["⚡ Fast Sensors (dB/dt, Ip)"]
+        A["🔌 Actuators (Coils/Pulses)"]
     end
 
-    subgraph "COOK Kernel (FPGA Fabric)"
+    subgraph Kernel ["COOK Kernel (FPGA Fabric)"]
         direction TB
 
-        subgraph "Layer 1: Reflex Loop (<1µs)"
-            PM[🔍 Precursor Monitor]
-            TM[🧠 Threat Memory (BRAM)]
-            GL[🛡️ Guardian Logic (Interlock)]
+        subgraph L1 ["Layer 1: Reflex Loop (<1µs)"]
+            PM["🔍 Precursor Monitor"]
+            TM["🧠 Threat Memory (BRAM)"]
+            GL["🛡️ Guardian Logic (Interlock)"]
         end
 
-        subgraph "Layer 2: Cognitive Loop (~1ms)"
-            ADAPT[🔄 RLS Model Adaptation]
+        subgraph L2 ["Layer 2: Cognitive Loop (~1ms)"]
+            ADAPT["🔄 RLS Model Adaptation"]
         end
 
         S ===>|Raw Data| PM
