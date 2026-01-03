@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Brasil de Souza"
+  given-names: "Guilherme"
+  orcid: "https://orcid.org/0000-0000-0000-0000" # Se tiver ORCID, coloque aqui
+title: "AION-CORE: Physics-Aware Adaptive Control Kernel for Tokamak Plasmas"
+version: 1.0.0
+doi: 10.5281/zenodo.123456 # Será gerado pelo Zenodo depois
+date-released: 2026-01-02
+url: "https://github.com/Akirabrs/AION-CORE-PSQ"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Brasil de Souza"
+    given-names: "Guilherme"
+  journal: "Zenodo Preprints"
+  title: "AION-CORE: A Physics-Anchored Anticipatory Control Kernel for High-Beta Tokamak Plasmas"
+  year: 2026
