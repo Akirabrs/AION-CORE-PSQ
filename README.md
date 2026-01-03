@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/Status-TRL%204%20(Lab%20Validated)-success?style=for-the-badge&logo=github" alt="Status TRL 4">
   <img src="https://img.shields.io/badge/Platform-FPGA%20%2F%20Real--Time-red?style=for-the-badge&logo=xilinx" alt="Platform FPGA">
   <img src="https://img.shields.io/badge/Latency-%3C%201%C2%B5s%20(Target)-blue?style=for-the-badge&logo=speedtest" alt="Latency Sub-microsecond">
-  <img src="https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge" alt="License MIT">
+  <img src="https://img.shields.io/badge/License-Apache%202.0-lightgrey?style=for-the-badge" alt="License Apache 2.0">
 </p>
 
 ---
@@ -30,6 +30,7 @@ It introduces the **PACC (Physics-Aware Adaptive Control Core)** paradigm: orche
 | **🏭 Industrial Validation** | Tested against high-fidelity simulators (50+ state variables) with realistic sensor noise and drift (TRL 4). |
 
 ---
+
 ## 🏗️ Architecture: The COOK Framework
 
 AION-CORE executes within the **Control-Oriented Operating Kernel (COOK)**, a dual-loop architecture optimized for determinism.
